@@ -50,7 +50,7 @@
 //Answer:
 class Movie2
 {
-    constructor(title, studio, rating="PG")
+    constructor(title, studio, rating)
     {
         this.title=title;
         this.studio=studio;
@@ -58,14 +58,31 @@ class Movie2
     }
     
 }
-var films = new Movie2("Titanic", "ABC studio", "PG13");
-    var films1= new Movie2("Friends", "XYZ studio");
-    var films2= new Movie2("Frozen","new studio" );
+    var films = new Movie2("Titanic", "ABC studio", "PG13");
+    var films1= new Movie2("Friends", "XYZ studio","PG");
+    var films2= new Movie2("Frozen","new studio","PG13" );
     console.log(`movie rating1: ${films.rating}`);
     console.log(`movie rating2: ${films1.rating}`);
     console.log(`movie rating3: ${films2.rating}`);
+    // var emptyarr=[];
+    // get PG()
+    // {
+    //   return this.rating;
+      
+    // }
+     const FindPG =  function (PG) {
+    const Temp= [];
+    for(let j = 0; j< films.rating; j++){
+      if(this.rating==PG)
+      {
+        Temp.push(films.rating(j));
+      }
+    }
+    return Temp;
+    
+}
+console.log(Temp);
 
-   
   
   
 //------------------------------------------------------------------------------------------------------------------
